@@ -245,7 +245,7 @@
                 <div class="proj-body">
                   <span class="proj-tag">Liquid Legends</span>
                   <p class="proj-desc">An Enter The Gungeon inspired shoot 'em up developed in Unity. The bulk of this project consisted of tweaking controllers
-                    and physics scripts for the shooting and movement mechanics The soundtrack and pixel art graphics were entirely devleoped by me.
+                    and physics scripts in C# for the shooting and movement mechanics. The soundtrack and pixel art graphics were created by me, which was a fun challenge.
                   </p>
                   <a href="https://github.com/mujulian/LiquidLegends" target="_blank"><button type="button" class="btn btn-outline-primary">Code</button></a>
                 </div>
@@ -350,7 +350,8 @@
 
         function vis() { const w = track.parentElement.offsetWidth; return w <= 540 ? 1 : w <= 768 ? 2 : 3; }
         function max() { return Math.max(0, cards.length - vis()); }
-
+        
+        <!-- Selection dots -->
         function buildDots() {
           dots.innerHTML = '';
           for (let i = 0; i <= max(); i++) {
